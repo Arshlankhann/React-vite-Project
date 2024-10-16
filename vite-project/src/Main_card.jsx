@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import React from "react";
+import Navbar from "./Components/navbar";
 import './App.css'
+import './index.css'
 
 function Main_card() {
     const [card, setCard] = useState([])
@@ -17,7 +19,7 @@ function Main_card() {
 
     return (
         <>
-            <navbar />
+            <Navbar />
             <div className="container">
                 {card.map((card) => {
                     return <div key={card.id} className="card">
